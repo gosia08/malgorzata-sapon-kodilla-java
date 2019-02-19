@@ -1,7 +1,6 @@
 package com.kodilla.testing.forum.statistics;
+import java.util.List;
 
-public class Statistics {
-    import java.util.List;
 
     public interface Statistics {
 
@@ -12,4 +11,4 @@ public class Statistics {
         int commentsCount();       // total quantity of forum comments
     }
 
-}
+
