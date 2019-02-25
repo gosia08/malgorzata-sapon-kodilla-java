@@ -24,7 +24,7 @@ import org.junit.Before;
             ArrayList<Integer>listNumbers = OddNumbersExterminator.exterminate(emptyList);
             System.out.println("Testing" + listNumbers);
             //Then
-            Assert.assertEquals(emptyList,listNumbers);
+            Assert.assertTrue(emptyList.isEmpty());
         }
         @Test
         public void testOddNumbersExterminatorNormalList(){
