@@ -25,7 +25,7 @@ public class BookDirectoryTestSuite {
     @Test
     public void testListBooksWithConditionsReturnList() {
         // Given
-        LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
+        LibraryDataBase libraryDatabaseMock = mock(LibraryDataBase.class);
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
         List<Book> resultListOfBooks = new ArrayList<Book>();
         Book book1 = new Book("Secrets of Alamo", "John Smith", 2008);
@@ -49,7 +49,7 @@ public class BookDirectoryTestSuite {
     @Test
     public void testListBooksWithConditionMoreThan20() {
         // Given
-        LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
+        LibraryDataBase libraryDatabaseMock = mock(LibraryDataBase.class);
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
         List<Book> resultListOf0Books = new ArrayList<Book>();
         List<Book> resultListOf15Books = generateListOfNBooks(15);
@@ -75,7 +75,7 @@ public class BookDirectoryTestSuite {
     @Test
     public void testListBooksWithConditionFragmentShorterThan3() {
         // Given
-        LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
+        LibraryDataBase libraryDatabaseMock = mock(LibraryDataBase.class);
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
         List<Book> resultListOf10Books = generateListOfNBooks(10);
         when(libraryDatabaseMock.listBooksWithCondition(anyString()))
@@ -93,7 +93,7 @@ public class BookDirectoryTestSuite {
     public void testlListBooksInHandsOfNoBorrowedBooks() {
 
         // Given
-        LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
+        LibraryDataBase libraryDatabaseMock = mock(LibraryDataBase.class);
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
         List<Book> resultListOfBooks = new ArrayList<Book>();
         LibraryUser libraryUser = new LibraryUser("Stefan", "Kowalski", "661202854");
@@ -110,7 +110,7 @@ public class BookDirectoryTestSuite {
     @Test
     public void testlistBooksInHandsOfOneBorrowedBooks() {
         // Given
-        LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
+        LibraryDataBase libraryDatabaseMock = mock(LibraryDataBase.class);
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
         LibraryUser libraryUser = new LibraryUser("Stefan", "Kowalski", "661202854");
         List<Book> resultListOf1Book = generateListOfNBooks(1);
@@ -129,7 +129,7 @@ public class BookDirectoryTestSuite {
     public void testlistBooksInHandsOfFiveBorrowedBooks() {
 
         // Given
-        LibraryDatabase libraryDatabaseMock = mock(LibraryDatabase.class);
+        LibraryDataBase libraryDatabaseMock = mock(LibraryDataBase.class);
         BookLibrary bookLibrary = new BookLibrary(libraryDatabaseMock);
         LibraryUser libraryUser = new LibraryUser("Stefan", "Kowalski", "661202854");
         List<Book> resultListOf5Book = generateListOfNBooks(5);

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.forum.statistics.StatisticsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-02-20T23:08:07" hostname="Oliwier" time="0.118">
+  <properties/>
+  <testcase name="testCalculateADVStatisticsAllZeros" classname="com.kodilla.testing.forum.statistics.StatisticsTest" time="0.109"/>
+  <testcase name="testCalculateADVStatisticsHundredUsers" classname="com.kodilla.testing.forum.statistics.StatisticsTest" time="0.005"/>
+  <testcase name="testCalculateADVStatisticsLessPostsThanComments" classname="com.kodilla.testing.forum.statistics.StatisticsTest" time="0.001"/>
+  <testcase name="testCalculateADVStatisticsHundredUsersAndThousandPosts" classname="com.kodilla.testing.forum.statistics.StatisticsTest" time="0.002"/>
+  <testcase name="testCalculateADVStatisticsLessCommentsThanPosts" classname="com.kodilla.testing.forum.statistics.StatisticsTest" time="0.001"/>
+  <system-out><![CDATA[This is the beginning of all tests
+ 
+Preparing test # 1
+ 
+0
+0
+0
+0.0
+0.0
+0.0
+ 
+ 
+Test # 1 completed
+ 
+Preparing test # 2
+ 
+100
+0
+0
+0.0
+0.0
+0.0
+ 
+ 
+Test # 2 completed
+ 
+Preparing test # 3
+ 
+100
+100
+1000
+10.0
+10.0
+1.0
+ 
+ 
+Test # 3 completed
+ 
+Preparing test # 4
+ 
+100
+1000
+0
+0.0
+0.0
+10.0
+ 
+ 
+Test # 4 completed
+ 
+Preparing test # 5
+ 
+100
+1000
+100
+1.0
+0.0
+10.0
+ 
+ 
+Test # 5 completed
+This is the end of tests
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

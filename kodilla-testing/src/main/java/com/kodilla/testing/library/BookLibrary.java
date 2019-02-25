@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BookLibrary {
-    LibraryDatabase libraryDatabase;
+    LibraryDataBase libraryDataBase;
 
-    public BookLibrary(LibraryDatabase libraryDatabase) {
-        this.libraryDatabase = libraryDatabase;
+    public BookLibrary(LibraryDataBase libraryDataBase) {
+        this.libraryDataBase = libraryDataBase;
     }
 
     public List<Book> listBooksWithCondition(String titleFragment) {
         List<Book> bookList = new ArrayList<Book>();
         if (titleFragment.length() < 3) return bookList;
-        List<Book> resultList = libraryDatabase.listBooksWithCondition(titleFragment);
+        List<Book> resultList = libraryDataBase.listBooksWithCondition(titleFragment);
         if (resultList.size() > 20)
             return bookList;
         bookList = resultList;
@@ -22,7 +22,7 @@ public class BookLibrary {
 
     public List<Book> listBooksInHandsOf(LibraryUser libraryUser) {
         List<Book> bookList = new ArrayList<Book>();
-        bookList = libraryDatabase.listBooksInHandsOf(libraryUser);
+        bookList = libraryDataBase.listBooksInHandsOf(libraryUser);
         return bookList;
     }
 }

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class ShapeCollectorTestSuite {
 
-    private static int testCounter = 0;
+
 
     @BeforeClass
     public static void beforeAllTests() {
@@ -20,8 +20,7 @@ public class ShapeCollectorTestSuite {
 
     @Before
     public void beforeEveryTest() {
-        testCounter++;
-        System.out.println("Preparing to execute test #" + testCounter);
+        System.out.println("Preparing to execute test #" );
     }
 
 
@@ -29,7 +28,8 @@ public class ShapeCollectorTestSuite {
     public void testAddFigure(){
 
         // given
-        ShapeCollector shapeCollector = new ShapeCollector();
+
+        ShapeCollector shapeCollector = new ShapeCollector(new ArrayList<Shape>());
 
         shapeCollector.addFigure(new Circle(20));
         shapeCollector.addFigure(new Triangle(10,15.5));
@@ -46,7 +46,7 @@ public class ShapeCollectorTestSuite {
     @Test
     public void testRemoveFigure() {
 
-        ShapeCollector shapeCollector = new ShapeCollector();
+        ShapeCollector shapeCollector = new ShapeCollector(new ArrayList<Shape>());
 
         Circle circle = new Circle(20);
         Triangle triangle = new Triangle(11,10.5);
@@ -65,7 +65,7 @@ public class ShapeCollectorTestSuite {
     public void testGetFigure(){
         //Given
 
-        ShapeCollector shapeCollector = new ShapeCollector();
+        ShapeCollector shapeCollector = new ShapeCollector(new ArrayList<Shape>());
 
         Circle circle = new Circle(20);
         Triangle triangle = new Triangle(11,10.5);
@@ -87,7 +87,7 @@ public class ShapeCollectorTestSuite {
     public void testShowFigures(){
         // given
 
-        ShapeCollector shapeCollector = new ShapeCollector();
+        ShapeCollector shapeCollector = new ShapeCollector(new ArrayList<Shape>());
 
         shapeCollector.addFigure(new Circle(20));
         shapeCollector.addFigure(new Square(10));
