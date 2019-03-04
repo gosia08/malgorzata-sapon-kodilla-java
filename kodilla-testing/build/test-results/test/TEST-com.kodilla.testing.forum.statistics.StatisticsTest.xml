@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing.forum.statistics.StatisticsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-02-20T23:08:07" hostname="Oliwier" time="0.118">
+<testsuite name="com.kodilla.testing.forum.statistics.StatisticsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-03-04T12:13:16" hostname="Oliwier" time="0.136">
   <properties/>
-  <testcase name="testCalculateADVStatisticsAllZeros" classname="com.kodilla.testing.forum.statistics.StatisticsTest" time="0.109"/>
-  <testcase name="testCalculateADVStatisticsHundredUsers" classname="com.kodilla.testing.forum.statistics.StatisticsTest" time="0.005"/>
+  <testcase name="testCalculateADVStatisticsAllZeros" classname="com.kodilla.testing.forum.statistics.StatisticsTest" time="0.126"/>
+  <testcase name="testCalculateADVStatisticsHundredUsers" classname="com.kodilla.testing.forum.statistics.StatisticsTest" time="0.004"/>
   <testcase name="testCalculateADVStatisticsLessPostsThanComments" classname="com.kodilla.testing.forum.statistics.StatisticsTest" time="0.001"/>
-  <testcase name="testCalculateADVStatisticsHundredUsersAndThousandPosts" classname="com.kodilla.testing.forum.statistics.StatisticsTest" time="0.002"/>
+  <testcase name="testCalculateADVStatisticsHundredUsersAndThousandPosts" classname="com.kodilla.testing.forum.statistics.StatisticsTest" time="0.001"/>
   <testcase name="testCalculateADVStatisticsLessCommentsThanPosts" classname="com.kodilla.testing.forum.statistics.StatisticsTest" time="0.001"/>
   <system-out><![CDATA[This is the beginning of all tests
  

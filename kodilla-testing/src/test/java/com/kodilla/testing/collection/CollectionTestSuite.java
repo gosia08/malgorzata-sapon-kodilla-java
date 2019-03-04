@@ -30,7 +30,7 @@ import org.junit.Before;
         public void testOddNumbersExterminatorNormalList(){
             //Given
             ArrayList<Integer>list = new ArrayList<Integer>(Arrays.asList(2,11,35,8,52,3));
-            ArrayList<Integer>oddList = new ArrayList<Integer>(Arrays.asList(2,8,52));
+            ArrayList<Integer>oddList = new ArrayList<Integer>(Arrays.asList(11,35,3));
             //When
             ArrayList<Integer>listNumbers = OddNumbersExterminator.exterminate(list);
             System.out.println("Testing" + listNumbers);
