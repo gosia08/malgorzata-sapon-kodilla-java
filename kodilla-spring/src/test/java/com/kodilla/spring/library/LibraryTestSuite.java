@@ -31,20 +31,8 @@ public class LibraryTestSuite {
         Library library = context.getBean(Library.class);
         //When
         library.saveToDb();
-        //Then
-        //do nothing
+
     }
 
-    @Test
-    public void testContext() {
-        //Given
-        ApplicationContext context =
-                new AnnotationConfigApplicationContext("com.kodilla.spring");
 
-        //When & Then
-        System.out.println("===== Beans list: ==== >>");
-        Arrays.stream(context.getBeanDefinitionNames())
-                .forEach(System.out::println);
-        System.out.println("<< ===== Beans list ====");
-    }
 }
