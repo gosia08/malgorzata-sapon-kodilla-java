@@ -9,7 +9,11 @@ public final class Logger {
 
     public static Logger getInstance() {
         if (logger == null) {
-            logger = new Logger();
+            synchronized(Logger.class) {
+                if (logger == null) {
+                    logger = new Logger();
+                }
+            }
         }
         return logger;
     }
