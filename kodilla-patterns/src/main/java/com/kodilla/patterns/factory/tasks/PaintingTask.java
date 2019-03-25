@@ -27,7 +27,7 @@ public final class PaintingTask implements Task {
     @Override
     public boolean isTaskExecuted() {
         if(executeTask != null){
-            System.out.println(taskName + "Task is done.");
+            System.out.println(taskName + " Task is done.");
         }else{
             System.out.println(taskName + " Task is not done.");
         }

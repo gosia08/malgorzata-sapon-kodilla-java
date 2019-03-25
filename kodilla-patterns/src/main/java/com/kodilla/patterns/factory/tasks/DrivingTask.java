@@ -28,7 +28,7 @@ public final class DrivingTask implements Task {
         if(executeTask != null){
             System.out.println(taskName+ " Task is done.");
         }else{
-            System.out.println(taskName + " Task is not done.");
+            System.out.println(taskName + "Task is not done.");
         }
         return executeTask !=null;
     }

@@ -26,9 +26,9 @@ public final class ShoppingTask implements Task {
     @Override
     public boolean isTaskExecuted() {
         if (executeTask != null) {
-            System.out.println(taskName + " List done ");
+            System.out.println(taskName + "Task is done.");
         } else {
-            System.out.println(taskName + " still not done");
+            System.out.println(taskName + "Task is not done.");
         }
         return executeTask != null;
     }
