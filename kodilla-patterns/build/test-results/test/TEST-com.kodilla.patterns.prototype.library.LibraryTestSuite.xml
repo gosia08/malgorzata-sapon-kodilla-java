@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.prototype.library.LibraryTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-04-04T19:52:55" hostname="Oliwier" time="0.004">
+  <properties/>
+  <testcase name="testGetBooks" classname="com.kodilla.patterns.prototype.library.LibraryTestSuite" time="0.004"/>
+  <system-out><![CDATA[com.kodilla.patterns.prototype.library.Library@2aedaafd
+com.kodilla.patterns.prototype.library.Library@66dd0a4e
+com.kodilla.patterns.prototype.library.Library@3e44135a
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

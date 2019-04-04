@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.strategy.social.UserTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-04-04T19:52:55" hostname="Oliwier" time="0.003">
+  <properties/>
+  <testcase name="testDefaultSharingStrategies" classname="com.kodilla.patterns.strategy.social.UserTestSuite" time="0.002"/>
+  <testcase name="testIndividualSharingStrategy" classname="com.kodilla.patterns.strategy.social.UserTestSuite" time="0.001"/>
+  <system-out><![CDATA[Ola share post on Facebook
+Ala share post on Twitter
+Janek share post on Snapchat
+Ola not always share post on Twitter
+Ola not always share post on Snapchat
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
