@@ -11,4 +11,11 @@ import java.util.List;
 public interface TaskDao extends CrudRepository<Task, Integer> {
     List<Task>findByDuration (int duration);
 
+    void deleteById(int id);
+
+    Task findOne(int id);
+
+
+
+
 }

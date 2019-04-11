@@ -11,6 +11,9 @@ import java.util.List;
 public interface TaskFinancialDetailsDao extends CrudRepository<TaskFinancialDetails, Integer> {
     List<TaskFinancialDetails> findByPaid(boolean paid);
     void deleteById(long ID);
+
+
+
 }
 
 

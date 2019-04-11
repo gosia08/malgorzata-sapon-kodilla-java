@@ -14,4 +14,11 @@ public interface CompanyDao extends CrudRepository<Company, Integer>{
 
     @Query(nativeQuery = true)
     List<Company> retrieveCompaniesByFirstThreeLetters (@Param("FIRSTTHREELETTERS") String firstThreeLetters);
+
+   
+
+    List<Company> retrieveCompanyByFirstThreeLetters(String sof);
+
+    void delete(Company softwareMachine);
+    void deleteById(int id);
 }

@@ -59,9 +59,9 @@ public class CompanyDaoTestSuite {
 
         //CleanUp
         try {
-            companyDao.delete(softwareMachineId);
-            companyDao.delete(dataMaestersId);
-            companyDao.delete(greyMatterId);
+            companyDao.delete(softwareMachine);
+            companyDao.delete(dataMaesters);
+            companyDao.delete(greyMatter);
         } catch (Exception e) {
             //do nothing
         }
@@ -71,20 +71,20 @@ public class CompanyDaoTestSuite {
     public void testRetrieveEmployeeByLastname() {
 
         //Given
-        Employee jhonSmith = new Employee("John", "Smith");
+        Employee johnSmith = new Employee("John", "Smith");
         Employee lindaKovalsky = new Employee("Linda", "Kovalsky");
         Company softwareMachine = new Company("Software Machine");
         Company dataMaesters = new Company("Data Maesters");
         lindaKovalsky.getCompanies().add(softwareMachine);
         softwareMachine.getEmployees().add(lindaKovalsky);
-        jhonSmith.getCompanies().add(softwareMachine);
-        jhonSmith.getCompanies().add(dataMaesters);
-        softwareMachine.getEmployees().add(jhonSmith);
-        dataMaesters.getEmployees().add(jhonSmith);
+        johnSmith.getCompanies().add(softwareMachine);
+        johnSmith.getCompanies().add(dataMaesters);
+        softwareMachine.getEmployees().add(johnSmith);
+        dataMaesters.getEmployees().add(johnSmith);
         String expected = "Smith";
 
         //When
-        employeeDao.save(jhonSmith);
+        employeeDao.save(johnSmith);
         List<Employee> employeeList = employeeDao.retrieveEmployeeByLastname("Smith");
 
         //Than
@@ -95,7 +95,7 @@ public class CompanyDaoTestSuite {
 
         //CleanUp
         try {
-            employeeDao.delete(jhonSmith);
+            employeeDao.delete(johnSmith);
             employeeDao.delete(lindaKovalsky);
             companyDao.delete(softwareMachine);
             companyDao.delete(dataMaesters);
@@ -108,13 +108,13 @@ public class CompanyDaoTestSuite {
     public void testRetrieveCompanyByFirstThreeLetters() {
 
         //Given
-        Employee jhonSmith = new Employee("John", "Smith");
+        Employee johnSmith = new Employee("John", "Smith");
         Company softwareMachine = new Company("Software Machine");
         Company dataMaesters = new Company("Data Maesters");
-        jhonSmith.getCompanies().add(softwareMachine);
-        jhonSmith.getCompanies().add(dataMaesters);
-        softwareMachine.getEmployees().add(jhonSmith);
-        dataMaesters.getEmployees().add(jhonSmith);
+        johnSmith.getCompanies().add(softwareMachine);
+        johnSmith.getCompanies().add(dataMaesters);
+        softwareMachine.getEmployees().add(johnSmith);
+        dataMaesters.getEmployees().add(johnSmith);
 
         //When
         companyDao.save(softwareMachine);
@@ -128,7 +128,7 @@ public class CompanyDaoTestSuite {
         try {
             companyDao.delete(softwareMachine);
             companyDao.delete(dataMaesters);
-            employeeDao.delete(jhonSmith);
+            employeeDao.delete(johnSmith);
         } catch (Exception e) {
             //do nothing
         }
