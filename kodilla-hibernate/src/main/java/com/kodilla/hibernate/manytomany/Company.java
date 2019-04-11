@@ -1,14 +1,16 @@
 package com.kodilla.hibernate.manytomany;
 
+import org.hibernate.annotations.NamedQuery;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-@NamedNativeQuery(
+@NamedQuery(
         name = "Company.retrieveCompaniesByFirstThreeLetters",
-        query = "SELECT * FROM companies WHERE LEFT(company_name, 3) = :FIRSTTHREELETTERS ",
-        resultClass = Company.class
+        query = "SELECT * FROM companies WHERE LEFT(company_name, 3) = :FIRSTTHREELETTERS "
+
 )
 
 @Entity

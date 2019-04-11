@@ -85,7 +85,7 @@ public class CompanyDaoTestSuite {
 
         //When
         employeeDao.save(johnSmith);
-        List<Employee> employeeList = employeeDao.retrieveEmployeeByLastname("Smith");
+        List<Employee> employeeList = employeeDao.retrieveEmployeesByLastName("Smith");
 
         //Than
         for (Employee employee:employeeList) {
