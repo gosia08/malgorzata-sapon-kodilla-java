@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @NamedQuery(
-        name = "Company.retrieveCompaniesByFirstThreeLetters",
+        name = "Company.retrieveCompanyByFirstThreeLetters",
         query = "SELECT * FROM companies WHERE LEFT(company_name, 3) = :FIRSTTHREELETTERS "
 
 )
